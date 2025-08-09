@@ -1,0 +1,16 @@
+spring:
+  application:
+      name: neura-mcp-client
+  ai:
+    mcp:
+      client:
+        enabled: true
+        name: my-mcp-client
+        version: 1.0.0
+        request-timeout: 30s
+        type: SYNC
+        sse:
+          connections:
+            timeplus-mcp-server:
+              url: <YOUR-BASE-URL-IN-MCP-SERVER>
+              sse-endpoint: <YOUR-SSE-ENDPOINT-IN-MCP-SERVER>
