@@ -1,6 +1,6 @@
 spring:
   application:
-      name: neura-mcp-client
+    name: neura-mcp-client
   ai:
     mcp:
       client:
@@ -12,5 +12,6 @@ spring:
         sse:
           connections:
             timeplus-mcp-server:
-              url: <YOUR-BASE-URL-IN-MCP-SERVER>
-              sse-endpoint: <YOUR-SSE-ENDPOINT-IN-MCP-SERVER>
+              url: http://localhost:8081
+    openai:
+      api-key: ${OPENAI_KEY}
